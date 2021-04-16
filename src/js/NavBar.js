@@ -1,5 +1,7 @@
 import React from 'react';
 
+// Just draw the navbar
+
 const NavBar = (props) => {
 
   return (

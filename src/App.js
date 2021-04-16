@@ -5,6 +5,7 @@ import NavBar from './js/NavBar';
 import Filters from './js/Filters';
 import moment from 'moment';
 
+// Fake database
 const tasks = [
   {
       "id": 1,
@@ -34,16 +35,21 @@ const tasks = [
       "completed": false
   }];
 
+// Main app component
 class App extends React.Component {
 
+  // Get all the projects from the state
   getProjects(){
     return [...new Set(this.state.tasks.map(task => task.project))];
   }
 
+  // Constructor: set the tasks into the state
   constructor(props) {
     super(props);
     this.state = {tasks: tasks};
   }
+
+  // Main render: create all the view of the application
   render() {
     return (
       <div>

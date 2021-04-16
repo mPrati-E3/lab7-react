@@ -1,5 +1,7 @@
 import moment from 'moment'
 
+//bean
+
 class Task{    
 
     constructor(id, description, important, privateTask, deadline, project, completed) {

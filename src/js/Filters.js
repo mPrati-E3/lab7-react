@@ -1,15 +1,17 @@
 import React from 'react';
 
+// Create the a project
 function createProject(project) {
     return (
         <a href="/#" key = {project} className="list-group-item list-group-item-action">{project}</a>
     );
 }
 
+// Draw the filters of the sidebar
 const Filters = (props) => {
+
     let {projects} = props;
 
-  
     return (
     <div>
         <div className="list-group list-group-flush">
